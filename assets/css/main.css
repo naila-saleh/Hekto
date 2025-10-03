@@ -1,0 +1,88 @@
+body{
+    font-family: var(--main-font);
+    color: var(--main-font-color);
+}
+.main-list{
+    background-color: var(--violet1);
+    color: var(--white-color);
+    font-family: var(--secondary-font);
+    font-size: 15px;
+    padding: 10px 0;
+}
+.main-list a{
+    color: var(--white-color);
+}
+.main-list .contact ul, .main-list .about ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+}
+.main-list .contact ul .list-item, .main-list .about ul .list-item{
+}
+@media screen and (max-width: 768px){
+    .main-list{
+        display: none;
+    }
+}
+.header{
+    padding: 20px 0;
+}
+.header .logo a{
+    color: var(--secondary-font-color);
+    font-family: var(--secondary-font);
+    font-size: 34px;
+    font-weight: 700;
+}
+.header .list ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    align-items: center;
+}
+.header .list a{
+    color: var(--main-font-color);
+}
+.header .list .active{
+    color: var(--primary-color);
+}
+.header .list .list-item .active{
+    color: var(--primary-color);
+    fill: var(--primary-color);
+}
+.header .list .list-item a{
+    display: flex;
+    flex-wrap: wrap;
+    fill: var(--main-font-color);
+}
+.header .search form{
+    border: 1px solid var(--gray1);
+    border-radius: 3px;
+}
+.header .search input{
+    border: none;
+    outline: none;
+    padding-left: 5px;
+    font-size: 16px;
+}
+.header .search button{
+    padding: 5px 10px 3px;
+}
+.header .search svg{
+    fill: var(--white-color);
+    font-size: 20px;
+}
+.header .bars{
+    display: none;
+}
+@media screen and (max-width: 950px){
+    .header .list, .header .search{
+        display: none;
+    }
+    .header .bars{
+        display: block;
+    }
+}
+.header .bars svg{
+    fill: var(--main-font-color);
+}

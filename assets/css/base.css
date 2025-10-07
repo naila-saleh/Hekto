@@ -48,6 +48,27 @@ ul{
     width: calc( 100% - 320px);
     margin: auto;
 }
+.d-flex{
+    display: flex;
+}
+.flex-column{
+    flex-direction: column;
+}
+.gap-1{
+    gap: 0.25rem;
+}
+.gap-2{
+    gap: 0.5rem;
+}
+.gap-3{
+    gap: 1rem;
+}
+.gap-4{
+    gap: 1.5rem;
+}
+.gap-5{
+    gap: 3rem;
+}
 @media screen and (max-width: 1250px){
     .container{
         width: calc( 100% - 200px);

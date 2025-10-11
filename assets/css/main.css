@@ -154,6 +154,38 @@ body a{
     }
 }
 /* latest blog end */
+/* news letter start */
+.main .news-letter{
+    background-image: url("./../images/backgrounds/news-letter.webp");
+    background-size: cover;
+    padding: 175px 0;
+    text-align: center;
+    font-family: var(--secondary-font);
+}
+.main .news-letter .row{
+    flex-direction: column;
+    gap: 50px;
+}
+.main .news-letter h2{
+    color: var(--third-font-color);
+    font-size: 35px;
+    line-height: 155%; /* 54.25px */
+    letter-spacing: 0.525px;
+}
+@media screen and (max-width: 488px){
+    .main .news-letter{
+        padding: 120px 0;
+    }
+    .main .news-letter h2{
+        font-size: 27px;
+    }
+}
+@media screen and (max-width: 370px){
+    .main .news-letter{
+        padding: 80px 0;
+    }
+}
+/* news letter end */
 /* logos start */
 .main .logos{
     padding: 90px;
